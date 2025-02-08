@@ -23,9 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-Left.jsx
-Logout.jsx
-Search.jsx
-User.jsx
-Users.jsx
-Right.jsx

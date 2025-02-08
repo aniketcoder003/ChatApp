@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+.flex1 {
+	overflow-y: auto;
+	max-height: 66vh;
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE & Edge */
+  }
+  
+  .flex1::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+  }
+
+
+  .flex2 {
+	overflow-y: auto;
+	max-height: 81vh;
+	scrollbar-width: none; /* Firefox */
+	-ms-overflow-style: none; /* IE & Edge */
+  }
+  
+  .flex2::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+  }
+
+
+  
