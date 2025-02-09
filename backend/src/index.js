@@ -3,7 +3,13 @@ import dotenv from 'dotenv'
 import dbconnect from './db/db.js'
 dotenv.config()
 
+
+//routes
+import userRoutes from './routes/User.routes.js'
+
 const app=express()
+app.use(express.json())
+app.use(express.urlencoded({extended:true}))
 const PORT=process.env.PORT;
 
 (async ()=>{
@@ -18,3 +24,6 @@ const PORT=process.env.PORT;
 	console.error('Server connection Failed', error)
  }
 })()
+
+
+app.use('/user',userRoutes)
